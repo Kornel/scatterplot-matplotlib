@@ -9,10 +9,10 @@ test_df = pd.DataFrame({
 
 
 test_df.plot(kind="scatter", x="X", y="Y", s=50); 
-plt.savefig("scatter-1.png")
+plt.savefig("scatter-1.png", bbox_inches="tight")
 
 test_df.plot(kind="scatter", x="X", y="Y", c="C");
-plt.savefig("scatter-2.png")
+plt.savefig("scatter-2.png", bbox_inches="tight")
 
 test_df.plot(kind="scatter", x="X", y="Y", s=50, c="C", cmap="plasma");
-plt.savefig("scatter-3.png")
+plt.savefig("scatter-3.png", bbox_inches="tight")
